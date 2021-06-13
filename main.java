@@ -160,15 +160,36 @@ public class Main {
         //Use continue; to escape an iteration
 
         //Arrays*******
-        int [] marks = {1,3,5,7};
-        marks[3]=90; // Updated value of marks 3
+        int[] marks = {1, 3, 5, 7};
+        marks[3] = 90; // Updated value of marks 3
         System.out.println(marks[0]);
         System.out.println(marks[2]);
-        // Iterate an array
-        for (int p=0; p< marks.length; p++){
+        // Classic way to Iterate an array
+        for (int p = 0; p < marks.length; p++) {
             System.out.println(marks[p]);
         }
+        //Modern way to iterate an array
 
+        for (int value : marks) {
+            System.out.println(value);
+        }
+        //Multi dimensional array
+        int [][] matrix ={{123}, {456}};
+        System.out.println();
+
+        //Try Catch
+
+        String [] cars = {"Mehru The Boss" , "Toyota", "Honda","Audi","Lamborghini","Bentley"};
+        try {
+            System.out.println(cars[7]);
+        }
+        catch (Exception e){
+            System.out.println(e);
+        }
+
+        System.out.println("Dude huh!");
+
+        
 
 
 
@@ -177,4 +198,7 @@ public class Main {
 
 
     }
+
+
 }
+
