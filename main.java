@@ -3,6 +3,7 @@ package com.jp;
 
 import com.sun.org.apache.bcel.internal.generic.SWITCH;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main {
@@ -143,20 +144,34 @@ public class Main {
 //            i += 1;
 //        }
         //do while********
-        int j = 0;
-        do {
-            System.out.println(j);
-            j += 1;
-        }while (j>100);
-        //for*******
-        int m;
-        for (m=0; m<10; m++){
+//        int j = 0;
+//        do {
+//            System.out.println(j);
+//            j += 1;
+//        }while (j>100);
+//        //for*******
+//        int m;
+//        for (m=0; m<10; m++){
+//
+//            System.out.println(m);
 
-            System.out.println(m);
-
-        }
+//        }
 
         //Use continue; to escape an iteration
+
+        //Arrays*******
+        int [] marks = {1,3,5,7};
+        marks[3]=90; // Updated value of marks 3
+        System.out.println(marks[0]);
+        System.out.println(marks[2]);
+        // Iterate an array
+        for (int p=0; p< marks.length; p++){
+            System.out.println(marks[p]);
+        }
+
+
+
+
 
 
 
